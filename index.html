@@ -22,15 +22,23 @@ header {
 }
 
 .container {
-    padding: 20px;
-}
+  <div class="grid">
 
-.card {
-    background: white;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+<div class="card">
+<img src="churi.jpg">
+<h3>Churi Set</h3>
+<p class="price">৳250</p>
+<a class="btn" href="https://wa.me/8801410067444">Order</a>
+</div>
+
+<div class="card">
+<img src="necklace.jpg">
+<h3>Necklace</h3>
+<p class="price">৳500</p>
+<a class="btn" href="https://wa.me/8801410067444">Order</a>
+</div>
+
+</div>
 }
 
 img {
@@ -104,3 +112,8 @@ footer {
 
 </body>
 </html>
+</css>.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
