@@ -1,68 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><style>
-body {
-    margin: 0;
-    font-family: Arial;
-    background: #fff7fb;
-}
-
-header {
-    background: #ff4d88;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.container {
-    padding: 20px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.price {
-    color: #ff4d88;
-    font-weight: bold;
-}
-
-.btn {
-    display: block;
-    text-align: center;
-    background: #25D366;
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #222;
-    color: white;
-    margin-top: 20px;
-}
-</style>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anu's Boutique</title>
@@ -70,65 +8,89 @@ footer {
 <style>
 body {
     margin: 0;
-    font-family: Arial;
-    background: #fff7fb;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
 }
 
+/* HEADER */
 header {
-<header>
-✨ Anu's Boutique ✨
-<p style="font-size:14px;">Premium Jewelry Collection</p>
-</header>
-
-.container {
-  <div class="grid">
-
-<div class="card">
-<img src="churi.jpg">
-<h3>Churi Set</h3>
-<p class="price">৳250</p>
-<a class="btn" href="https://wa.me/8801410067444">Order</a>
-</div>
-
-<div class="card">
-<img src="necklace.jpg">
-<h3>Necklace</h3>
-<p class="price">৳500</p>
-<a class="btn" href="https://wa.me/8801410067444">Order</a>
-</div>
-
-</div>
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid #eee;
 }
 
-img {
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+/* CARD */
+.card {
+    text-align: center;
+}
+
+.card img {
     width: 100%;
-    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.03);
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
 }
 
 .price {
-    color: #ff4d88;
     font-weight: bold;
-    margin-top: 5px;
+    color: #111;
 }
 
+/* BUTTON */
 .btn {
-    display: block;
-    text-align: center;
-    background: #25D366;
-    color: white;
-    padding: 10px;
+    display: inline-block;
     margin-top: 10px;
-    border-radius: 8px;
+    padding: 8px 18px;
+    border: 1px solid #111;
+    color: #111;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
+.btn:hover {
+    background: #111;
+    color: #fff;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 15px;
-    background: #222;
-    color: white;
-    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    font-size: 13px;
+    color: #777;
 }
 </style>
 
@@ -137,39 +99,38 @@ footer {
 <body>
 
 <header>
-✨ Anu's Boutique ✨
+    <h1>Anu's Boutique</h1>
+    <p>Luxury Jewelry Collection</p>
 </header>
 
-<div class="container">
+<div class="grid">
 
     <div class="card">
-        <img src="https://via.placeholder.com/400x300" alt="product">
-        <h3>Beautiful Churi Set</h3>
+        <img src="churi.jpg" alt="Churi">
+        <h3>Gold Churi Set</h3>
         <p class="price">৳250</p>
-        <a class="btn" href="https://wa.me/8801410067444" target="_blank">Order on WhatsApp</a>
+        <a class="btn" href="https://wa.me/8801410067444" target="_blank">Shop Now</a>
     </div>
 
     <div class="card">
-        <img src="https://via.placeholder.com/400x300" alt="product">
-        <h3>Bridal Jewelry Set</h3>
+        <img src="earrings.jpg" alt="Earrings">
+        <h3>Elegant Earrings</h3>
+        <p class="price">৳350</p>
+        <a class="btn" href="https://wa.me/8801410067444" target="_blank">Shop Now</a>
+    </div>
+
+    <div class="card">
+        <img src="necklace.jpg" alt="Necklace">
+        <h3>Bridal Necklace</h3>
         <p class="price">৳850</p>
-        <a class="btn" href="https://wa.me/8801410067444" target="_blank">Order on WhatsApp</a>
-    </div>
-
-    <div class="card">
-        <img src="https://via.placeholder.com/400x300" alt="product">
-        <h3>Daily Wear Earrings</h3>
-        <p class="price">৳120</p>
-        <a class="btn" href="https://wa.me/8801410067444" target="_blank">Order on WhatsApp</a>
+        <a class="btn" href="https://wa.me/8801410067444" target="_blank">Shop Now</a>
     </div>
 
 </div>
 
 <footer>
-© 2026 Anu's Boutique | All Rights Reserved
+    © 2026 Anu's Boutique | All Rights Reserved
 </footer>
 
 </body>
 </html>
-;
-}
